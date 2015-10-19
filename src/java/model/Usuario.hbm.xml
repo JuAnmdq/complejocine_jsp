@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 17/10/2015 08:46:45 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="model.Usuario" table="usuario" catalog="cinema_utn" optimistic-lock="version">
+        <id name="pkUsuario" type="java.lang.Integer">
+            <column name="pk_usuario" />
+            <generator class="identity" />
+        </id>
+        <property name="nombre" type="string">
+            <column name="nombre" length="60" />
+        </property>
+        <property name="apellido" type="string">
+            <column name="apellido" length="60" />
+        </property>
+        <property name="dni" type="string">
+            <column name="dni" length="12" />
+        </property>
+        <property name="pass" type="string">
+            <column name="pass" length="40" />
+        </property>
+        <property name="email" type="string">
+            <column name="email" length="80" />
+        </property>
+        <property name="telefono" type="string">
+            <column name="telefono" length="40" />
+        </property>
+        <property name="rol" type="java.lang.Integer">
+            <column name="rol" />
+        </property>
+        <set name="reservas" table="reserva" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="fk_usuario" />
+            </key>
+            <one-to-many class="model.Reserva" />
+        </set>
+    </class>
+</hibernate-mapping>

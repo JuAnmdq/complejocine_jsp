@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 17/10/2015 08:46:45 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="model.Pelicula" table="pelicula" catalog="cinema_utn" optimistic-lock="version">
+        <id name="pkPelicula" type="java.lang.Integer">
+            <column name="pk_pelicula" />
+            <generator class="identity" />
+        </id>
+        <property name="titulo" type="string">
+            <column name="titulo" length="40" />
+        </property>
+        <property name="director" type="string">
+            <column name="director" length="40" />
+        </property>
+        <property name="duracion" type="java.lang.Double">
+            <column name="duracion" precision="22" scale="0" />
+        </property>
+        <property name="genero" type="string">
+            <column name="genero" length="40" />
+        </property>
+        <property name="imagen" type="string">
+            <column name="imagen" length="100" />
+        </property>
+        <set name="funcions" table="funcion" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="fk_pelicula" />
+            </key>
+            <one-to-many class="model.Funcion" />
+        </set>
+    </class>
+</hibernate-mapping>

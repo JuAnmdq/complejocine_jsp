@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 17/10/2015 08:46:45 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="model.Sala" table="sala" catalog="cinema_utn" optimistic-lock="version">
+        <id name="pkSala" type="java.lang.Integer">
+            <column name="pk_sala" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="cine" class="model.Cine" fetch="select">
+            <column name="fk_cine" />
+        </many-to-one>
+        <property name="nombre" type="string">
+            <column name="nombre_sala" length="40" />
+        </property>
+        <property name="filas" type="java.lang.Integer">
+            <column name="filas" />
+        </property>
+        <property name="columnas" type="java.lang.Integer">
+            <column name="columnas" />
+        </property>
+        <set name="funcions" table="funcion" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="fk_sala" />
+            </key>
+            <one-to-many class="model.Funcion" />
+        </set>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/juan/tpi/cinema_utn/web/salas.jsp</file>
+            <file>file:/C:/Users/juan/tpi/cinema_utn/src/java/controller/ControladoraFunciones.java</file>
+            <file>file:/C:/Users/juan/tpi/cinema_utn/src/java/controller/ControladoraPeliculas.java</file>
+            <file>file:/C:/Users/juan/tpi/cinema_utn/web/alta_funcion.jsp</file>
+            <file>file:/C:/Users/juan/tpi/cinema_utn/src/java/controller/ControladoraRegistro.java</file>
+            <file>file:/C:/Users/juan/tpi/cinema_utn/src/java/controller/ControladoraSalas.java</file>
+            <file>file:/C:/Users/juan/tpi/cinema_utn/src/java/controller/ControladoraLogin.java</file>
+            <file>file:/C:/Users/juan/tpi/cinema_utn/web/alta_cine.jsp</file>
+            <file>file:/C:/Users/juan/tpi/cinema_utn/src/java/model/dao/DAOGeneric.java</file>
+            <file>file:/C:/Users/juan/tpi/cinema_utn/src/java/controller/ControladoraCines.java</file>
+            <file>file:/C:/Users/juan/tpi/cinema_utn/src/java/servlets/AltaSala.java</file>
+            <file>file:/C:/Users/juan/tpi/cinema_utn/web/alta_sala.jsp</file>
+            <file>file:/C:/Users/juan/tpi/cinema_utn/web/index.jsp</file>
+            <file>file:/C:/Users/juan/tpi/cinema_utn/src/java/servlets/AltaCine.java</file>
+        </group>
+    </open-files>
+</project-private>

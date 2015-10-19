@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 17/10/2015 08:46:45 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="model.Reserva" table="reserva" catalog="cinema_utn" optimistic-lock="version">
+        <id name="pkReserva" type="java.lang.Integer">
+            <column name="pk_reserva" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="funcion" class="model.Funcion" fetch="select">
+            <column name="fk_funcion" />
+        </many-to-one>
+        <many-to-one name="usuario" class="model.Usuario" fetch="select">
+            <column name="fk_usuario" />
+        </many-to-one>
+    </class>
+</hibernate-mapping>
