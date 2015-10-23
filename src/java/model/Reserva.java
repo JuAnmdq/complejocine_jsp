@@ -6,7 +6,7 @@ package model;
  */
 public class Reserva implements java.io.Serializable {
 
-    private Integer pkReserva;
+    private Integer id;
     private Funcion funcion;
     private Usuario usuario;
 
@@ -18,12 +18,12 @@ public class Reserva implements java.io.Serializable {
         this.usuario = usuario;
     }
 
-    public Integer getPkReserva() {
-        return this.pkReserva;
+    public Integer getId() {
+        return this.id;
     }
 
-    public void setPkReserva(Integer pkReserva) {
-        this.pkReserva = pkReserva;
+    public void setId(Integer id) {
+        this.id = id;
     }
 
     public Funcion getFuncion() {

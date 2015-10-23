@@ -2,7 +2,7 @@ package controller;
 
 import java.util.List;
 import model.Usuario;
-import model.dao.DAOGeneric;
+import model.dao.DAOGenerico;
 
 public class ControladoraRegistro {
 
@@ -15,12 +15,12 @@ public class ControladoraRegistro {
         return instance;
     }
 
+    DAOGenerico daoAbm = DAOGenerico.getInstance();
+
     List<Usuario> usuarios;
-
-    DAOGeneric daoAbm = DAOGeneric.getInstance();
-
-    public void altaUsuario(String nombre, String apellido, String dni, String pass, String email, String telefono) {
-        Usuario user = new Usuario(nombre, apellido, dni, pass, email, telefono, Integer.SIZE, null);
+    
+    public void altaUsuario(String nombre, String apellido, String dni, String pass, String email, String telefono, int rol) {
+        Usuario user = new Usuario(nombre, apellido, dni, pass, email, telefono, rol, null);
         daoAbm.agregar(user);
     }
 
@@ -29,6 +29,6 @@ public class ControladoraRegistro {
     }
 
     public List<Usuario> getUsuarios() {
-        return daoAbm.getLista(Usuario.class, null);
+        return daoAbm.getLista(Usuario.class);
     }
 }

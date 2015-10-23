@@ -25,6 +25,8 @@ public class AltaPelicula extends HttpServlet {
         
         ControladoraPeliculas controlPeliculas = ControladoraPeliculas.getInstance();
         controlPeliculas.agregar(titulo, director, duracion, genero, imagen);
+        
+        response.sendRedirect("admin/peliculas.jsp");
     }
 
     @Override

@@ -9,9 +9,10 @@ import java.util.Set;
  */
 public class Cine implements java.io.Serializable {
 
-    private Integer pkCine;
+    private Integer id;
     private String nombre;
     private String direccion;
+    
     private Set salas = new HashSet(0);
 
     public Cine() {
@@ -23,12 +24,12 @@ public class Cine implements java.io.Serializable {
         this.salas = salas;
     }
 
-    public Integer getPkCine() {
-        return this.pkCine;
+    public Integer getId() {
+        return this.id;
     }
 
-    public void setPkCine(Integer pkCine) {
-        this.pkCine = pkCine;
+    public void setId(Integer id) {
+        this.id = id;
     }
 
     public String getNombre() {
@@ -54,5 +55,5 @@ public class Cine implements java.io.Serializable {
     public void setSalas(Set salas) {
         this.salas = salas;
     }
-
+    
 }

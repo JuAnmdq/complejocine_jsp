@@ -9,7 +9,7 @@ import java.util.Set;
  */
 public class Usuario implements java.io.Serializable {
 
-    private Integer pkUsuario;
+    private Integer id;
     private String nombre;
     private String apellido;
     private String dni;
@@ -33,12 +33,12 @@ public class Usuario implements java.io.Serializable {
         this.reservas = reservas;
     }
 
-    public Integer getPkUsuario() {
-        return this.pkUsuario;
+    public Integer getId() {
+        return this.id;
     }
 
-    public void setPkUsuario(Integer pkUsuario) {
-        this.pkUsuario = pkUsuario;
+    public void setId(Integer id) {
+        this.id = id;
     }
 
     public String getNombre() {

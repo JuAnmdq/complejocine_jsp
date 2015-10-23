@@ -4,14 +4,14 @@
 <!-- Generated 17/10/2015 08:46:45 by Hibernate Tools 4.3.1 -->
 <hibernate-mapping>
     <class name="model.Reserva" table="reserva" catalog="cinema_utn" optimistic-lock="version">
-        <id name="pkReserva" type="java.lang.Integer">
+        <id name="id" type="java.lang.Integer">
             <column name="pk_reserva" />
             <generator class="identity" />
         </id>
-        <many-to-one name="funcion" class="model.Funcion" fetch="select">
+        <many-to-one name="funcion" class="model.Funcion" fetch="join">
             <column name="fk_funcion" />
         </many-to-one>
-        <many-to-one name="usuario" class="model.Usuario" fetch="select">
+        <many-to-one name="usuario" class="model.Usuario" fetch="join">
             <column name="fk_usuario" />
         </many-to-one>
     </class>

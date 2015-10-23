@@ -3,20 +3,34 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/juan/tpi/cinema_utn/web/salas.jsp</file>
-            <file>file:/C:/Users/juan/tpi/cinema_utn/src/java/controller/ControladoraFunciones.java</file>
-            <file>file:/C:/Users/juan/tpi/cinema_utn/src/java/controller/ControladoraPeliculas.java</file>
-            <file>file:/C:/Users/juan/tpi/cinema_utn/web/alta_funcion.jsp</file>
+            <file>file:/C:/Users/juan/tpi/cinema_utn/src/java/servlets/Login.java</file>
             <file>file:/C:/Users/juan/tpi/cinema_utn/src/java/controller/ControladoraRegistro.java</file>
-            <file>file:/C:/Users/juan/tpi/cinema_utn/src/java/controller/ControladoraSalas.java</file>
+            <file>file:/C:/Users/juan/tpi/cinema_utn/web/admin/modifica_usuario.jsp</file>
+            <file>file:/C:/Users/juan/tpi/cinema_utn/web/admin/reservas.jsp</file>
+            <file>file:/C:/Users/juan/tpi/cinema_utn/src/java/model/dao/DAOGenerico.java</file>
+            <file>file:/C:/Users/juan/tpi/cinema_utn/src/java/model/Reserva.java</file>
+            <file>file:/C:/Users/juan/tpi/cinema_utn/src/java/servlets/Reservar.java</file>
+            <file>file:/C:/Users/juan/tpi/cinema_utn/web/admin/logout.jsp</file>
+            <file>file:/C:/Users/juan/tpi/cinema_utn/web/admin/salas.jsp</file>
+            <file>file:/C:/Users/juan/tpi/cinema_utn/web/admin/modifica_cine.jsp</file>
+            <file>file:/C:/Users/juan/tpi/cinema_utn/web/admin/dashboard.jsp</file>
+            <file>file:/C:/Users/juan/tpi/cinema_utn/web/admin/cines.jsp</file>
+            <file>file:/C:/Users/juan/tpi/cinema_utn/web/admin/navbar.jsp</file>
+            <file>file:/C:/Users/juan/tpi/cinema_utn/web/reservas.jsp</file>
+            <file>file:/C:/Users/juan/tpi/cinema_utn/web/admin/header.jsp</file>
+            <file>file:/C:/Users/juan/tpi/cinema_utn/src/java/controller/ControladoraReservas.java</file>
+            <file>file:/C:/Users/juan/tpi/cinema_utn/web/registro.jsp</file>
+            <file>file:/C:/Users/juan/tpi/cinema_utn/src/java/controller/ControladoraPeliculas.java</file>
+            <file>file:/C:/Users/juan/tpi/cinema_utn/web/admin/funciones.jsp</file>
+            <file>file:/C:/Users/juan/tpi/cinema_utn/web/admin/alta_sala.jsp</file>
             <file>file:/C:/Users/juan/tpi/cinema_utn/src/java/controller/ControladoraLogin.java</file>
-            <file>file:/C:/Users/juan/tpi/cinema_utn/web/alta_cine.jsp</file>
-            <file>file:/C:/Users/juan/tpi/cinema_utn/src/java/model/dao/DAOGeneric.java</file>
-            <file>file:/C:/Users/juan/tpi/cinema_utn/src/java/controller/ControladoraCines.java</file>
-            <file>file:/C:/Users/juan/tpi/cinema_utn/src/java/servlets/AltaSala.java</file>
-            <file>file:/C:/Users/juan/tpi/cinema_utn/web/alta_sala.jsp</file>
-            <file>file:/C:/Users/juan/tpi/cinema_utn/web/index.jsp</file>
-            <file>file:/C:/Users/juan/tpi/cinema_utn/src/java/servlets/AltaCine.java</file>
+            <file>file:/C:/Users/juan/tpi/cinema_utn/src/java/servlets/Registrar.java</file>
+            <file>file:/C:/Users/juan/tpi/cinema_utn/web/admin/modifica_pelicula.jsp</file>
+            <file>file:/C:/Users/juan/tpi/cinema_utn/web/admin/usuarios.jsp</file>
+            <file>file:/C:/Users/juan/tpi/cinema_utn/web/admin/alta_cine.jsp</file>
+            <file>file:/C:/Users/juan/tpi/cinema_utn/web/admin/alta_pelicula.jsp</file>
+            <file>file:/C:/Users/juan/tpi/cinema_utn/web/admin/index.jsp</file>
+            <file>file:/C:/Users/juan/tpi/cinema_utn/web/admin/peliculas.jsp</file>
         </group>
     </open-files>
 </project-private>

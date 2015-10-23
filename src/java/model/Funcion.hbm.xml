@@ -4,23 +4,23 @@
 <!-- Generated 17/10/2015 08:46:45 by Hibernate Tools 4.3.1 -->
 <hibernate-mapping>
     <class name="model.Funcion" table="funcion" catalog="cinema_utn" optimistic-lock="version">
-        <id name="pkFuncion" type="java.lang.Integer">
+        <id name="id" type="java.lang.Integer">
             <column name="pk_funcion" />
             <generator class="identity" />
         </id>
-        <many-to-one name="pelicula" class="model.Pelicula" fetch="select">
+        <many-to-one name="pelicula" class="model.Pelicula" fetch="join" cascade="save-update, delete">
             <column name="fk_pelicula" />
         </many-to-one>
-        <many-to-one name="sala" class="model.Sala" fetch="select">
+        <many-to-one name="sala" class="model.Sala" fetch="join">
             <column name="fk_sala" />
         </many-to-one>
-        <property name="fechaFuncion" type="date">
+        <property name="fecha" type="date">
             <column name="fecha_funcion" length="10" />
         </property>
-        <property name="horaFuncion" type="time">
+        <property name="hora" type="time">
             <column name="hora_funcion" length="8" />
         </property>
-        <set name="reservas" table="reserva" inverse="true" lazy="true" fetch="select">
+        <set name="reservas" table="reserva" inverse="false" lazy="false" fetch="select" cascade="save-update, delete">
             <key>
                 <column name="fk_funcion" />
             </key>

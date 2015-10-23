@@ -3,7 +3,7 @@ package model.dao;
 import model.Usuario;
 import org.hibernate.HibernateException;
 
-public class DAOUsuarios extends DAOGeneric {
+public class DAOUsuarios extends DAOGenerico {
 
     static DAOUsuarios instance;
 

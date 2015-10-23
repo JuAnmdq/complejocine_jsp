@@ -28,6 +28,8 @@ public class AltaSala extends HttpServlet {
 
         Cine cine = ControladoraCines.getInstance().buscarPorId(id);
         controlSalas.agregar(cine, nombre, filas, columnas);
+        
+        response.sendRedirect("admin/salas.jsp");
     }
 
     @Override

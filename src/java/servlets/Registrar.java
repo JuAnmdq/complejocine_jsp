@@ -24,16 +24,18 @@ public class Registrar extends HttpServlet {
                pass = request.getParameter("pass"),
                email = request.getParameter("email"),
                telefono = request.getParameter("telefono");
+        
+        int rol = Integer.parseInt(request.getParameter("rol"));
 
         ControladoraRegistro controlRegistro = ControladoraRegistro.getInstance();
         HttpSession session = request.getSession(true);
         
-        controlRegistro.altaUsuario(nombre, apellido, dni, pass, email, telefono);
+        controlRegistro.altaUsuario(nombre, apellido, dni, pass, email, telefono, rol);
         
         Usuario user = controlRegistro.buscarUsuario(dni);
         session.setAttribute("user", user);
         
-        response.sendRedirect("main.jsp");
+        response.sendRedirect("index.jsp");
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">

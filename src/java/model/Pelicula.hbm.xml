@@ -4,7 +4,7 @@
 <!-- Generated 17/10/2015 08:46:45 by Hibernate Tools 4.3.1 -->
 <hibernate-mapping>
     <class name="model.Pelicula" table="pelicula" catalog="cinema_utn" optimistic-lock="version">
-        <id name="pkPelicula" type="java.lang.Integer">
+        <id name="id" type="java.lang.Integer">
             <column name="pk_pelicula" />
             <generator class="identity" />
         </id>
@@ -23,7 +23,7 @@
         <property name="imagen" type="string">
             <column name="imagen" length="100" />
         </property>
-        <set name="funcions" table="funcion" inverse="true" lazy="true" fetch="select">
+        <set name="funcions" table="funcion" inverse="false" lazy="true" fetch="select" cascade="save-update, delete">
             <key>
                 <column name="fk_pelicula" />
             </key>

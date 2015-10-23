@@ -1,6 +1,7 @@
 package model;
 // Generated 17/10/2015 08:46:42 by Hibernate Tools 4.3.1
 
+import java.sql.Time;
 import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
@@ -10,30 +11,30 @@ import java.util.Set;
  */
 public class Funcion implements java.io.Serializable {
 
-    private Integer pkFuncion;
+    private Integer id;
     private Pelicula pelicula;
     private Sala sala;
-    private Date fechaFuncion;
-    private Date horaFuncion;
+    private Date fecha;
+    private Time hora;
     private Set reservas = new HashSet(0);
 
     public Funcion() {
     }
 
-    public Funcion(Pelicula pelicula, Sala sala, Date fechaFuncion, Date horaFuncion, Set reservas) {
+    public Funcion(Pelicula pelicula, Sala sala, Date fecha, Time hora, Set reservas) {
         this.pelicula = pelicula;
         this.sala = sala;
-        this.fechaFuncion = fechaFuncion;
-        this.horaFuncion = horaFuncion;
+        this.fecha = fecha;
+        this.hora = hora;
         this.reservas = reservas;
     }
 
-    public Integer getPkFuncion() {
-        return this.pkFuncion;
+    public Integer getId() {
+        return this.id;
     }
 
-    public void setPkFuncion(Integer pkFuncion) {
-        this.pkFuncion = pkFuncion;
+    public void setId(Integer id) {
+        this.id = id;
     }
 
     public Pelicula getPelicula() {
@@ -52,20 +53,20 @@ public class Funcion implements java.io.Serializable {
         this.sala = sala;
     }
 
-    public Date getFechaFuncion() {
-        return this.fechaFuncion;
+    public Date getFecha() {
+        return this.fecha;
     }
 
-    public void setFechaFuncion(Date fechaFuncion) {
-        this.fechaFuncion = fechaFuncion;
+    public void setFecha(Date fechaFuncion) {
+        this.fecha = fechaFuncion;
     }
 
-    public Date getHoraFuncion() {
-        return this.horaFuncion;
+    public Date getHora() {
+        return this.hora;
     }
 
-    public void setHoraFuncion(Date horaFuncion) {
-        this.horaFuncion = horaFuncion;
+    public void setHora(Time hora) {
+        this.hora = hora;
     }
 
     public Set getReservas() {

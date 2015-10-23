@@ -9,7 +9,7 @@ import java.util.Set;
  */
 public class Pelicula implements java.io.Serializable {
 
-    private Integer pkPelicula;
+    private Integer id;
     private String titulo;
     private String director;
     private Double duracion;
@@ -29,12 +29,12 @@ public class Pelicula implements java.io.Serializable {
         this.funcions = funcions;
     }
 
-    public Integer getPkPelicula() {
-        return this.pkPelicula;
+    public Integer getId() {
+        return this.id;
     }
 
-    public void setPkPelicula(Integer pkPelicula) {
-        this.pkPelicula = pkPelicula;
+    public void setId(Integer id) {
+        this.id = id;
     }
 
     public String getTitulo() {

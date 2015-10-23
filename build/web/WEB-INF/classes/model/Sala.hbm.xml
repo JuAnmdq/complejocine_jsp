@@ -4,11 +4,11 @@
 <!-- Generated 17/10/2015 08:46:45 by Hibernate Tools 4.3.1 -->
 <hibernate-mapping>
     <class name="model.Sala" table="sala" catalog="cinema_utn" optimistic-lock="version">
-        <id name="pkSala" type="java.lang.Integer">
+        <id name="id" type="java.lang.Integer">
             <column name="pk_sala" />
             <generator class="identity" />
         </id>
-        <many-to-one name="cine" class="model.Cine" fetch="select">
+        <many-to-one name="cine" class="model.Cine" fetch="join" lazy="false">
             <column name="fk_cine" />
         </many-to-one>
         <property name="nombre" type="string">
@@ -20,7 +20,7 @@
         <property name="columnas" type="java.lang.Integer">
             <column name="columnas" />
         </property>
-        <set name="funcions" table="funcion" inverse="true" lazy="true" fetch="select">
+        <set name="funcions" table="funcion" inverse="true" lazy="false" fetch="select">
             <key>
                 <column name="fk_sala" />
             </key>

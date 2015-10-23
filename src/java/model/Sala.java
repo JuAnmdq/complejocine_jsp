@@ -9,7 +9,7 @@ import java.util.Set;
  */
 public class Sala implements java.io.Serializable {
 
-    private Integer pkSala;
+    private Integer id;
     private Cine cine;
     private String nombre;
     private Integer filas;
@@ -27,12 +27,12 @@ public class Sala implements java.io.Serializable {
         this.funcions = funcions;
     }
 
-    public Integer getPkSala() {
-        return this.pkSala;
+    public Integer getId() {
+        return this.id;
     }
 
-    public void setPkSala(Integer pkSala) {
-        this.pkSala = pkSala;
+    public void setId(Integer id) {
+        this.id = id;
     }
 
     public Cine getCine() {

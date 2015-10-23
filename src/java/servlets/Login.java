@@ -26,7 +26,12 @@ public class Login extends HttpServlet {
         Usuario user = controlLogin.login(dni, pass);
         session.setAttribute("user", user);
         
-        response.sendRedirect("main.jsp");
+        if(user.getRol() == 1) {
+            response.sendRedirect("admin/dashboard.jsp");
+        } else {
+            response.sendRedirect("index.jsp");
+        }
+        
     }
 
    @Override

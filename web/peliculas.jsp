@@ -16,13 +16,13 @@
     <div>
       <ul>
         <% for (Pelicula pelicula : peliculas) {%>
-        <li><%= pelicula.getTitulo()%></li>
-        <li><%= pelicula.getDirector()%></li>
-        <li><%= pelicula.getDuracion()%></li>
-        <li><%= pelicula.getGenero()%></li>
-        <li><img src="<%= pelicula.getImagen()%>"/></li>
-        <% 
-        }%>
+          <li><%= pelicula.getTitulo() %></li>
+          <li><%= pelicula.getDirector() %></li>
+          <li><%= pelicula.getDuracion() %></li>
+          <li><%= pelicula.getGenero() %></li>
+          <li><img src="<%= pelicula.getImagen() %>"/></li>
+        </form>        
+        <% } %>
       </ul>
     </div>
   </body>

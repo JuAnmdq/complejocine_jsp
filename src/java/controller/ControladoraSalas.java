@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.Set;
 import model.Cine;
 import model.Sala;
-import model.dao.DAOGeneric;
+import model.dao.DAOGenerico;
 
 public class ControladoraSalas {
 
@@ -17,7 +17,7 @@ public class ControladoraSalas {
         return instance;
     }
 
-    DAOGeneric daoAbm = DAOGeneric.getInstance();
+    DAOGenerico daoAbm = DAOGenerico.getInstance();
 
     public void agregar(Cine cine, String nombre, int filas, int columnas) {
         Sala sala = new Sala(cine, nombre, filas, columnas, null);
@@ -29,7 +29,8 @@ public class ControladoraSalas {
     }
 
     public List<Sala> getLista() {
-        return daoAbm.getLista(Sala.class, "cine");
+        //return daoAbm.getLista(Sala.class, "cine");
+        return daoAbm.getLista(Sala.class);
     }
 
 }

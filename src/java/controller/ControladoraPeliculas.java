@@ -2,7 +2,7 @@ package controller;
 
 import java.util.List;
 import model.Pelicula;
-import model.dao.DAOPeliculas;
+import model.dao.DAOGenerico;
 
 public class ControladoraPeliculas {
 
@@ -15,14 +15,33 @@ public class ControladoraPeliculas {
         return instance;
     }
 
-    DAOPeliculas daoPeliculas = DAOPeliculas.getInstance();
-    
+    DAOGenerico dao = DAOGenerico.getInstance();
+
     public void agregar(String titulo, String director, Double duracion, String genero, String imagen) {
         Pelicula p = new Pelicula(titulo, director, duracion, genero, imagen, null);
-        daoPeliculas.agregar(p);
+        dao.agregar(p);
+    }
+
+    public void modificar(int id, String titulo, String director, Double duracion, String genero, String imagen) {
+        Pelicula p = (Pelicula) dao.buscarPorId(Pelicula.class, id);
+        p.setTitulo(titulo);
+        p.setDirector(director);
+        p.setDuracion(duracion);
+        p.setGenero(genero);
+        p.setImagen(imagen);
+        dao.modificar(p);
     }
     
+    public void eliminar(int id) {
+        Pelicula p = (Pelicula) dao.buscarPorId(Pelicula.class, id);
+        dao.eliminar(p);
+    }
+    
+    public Pelicula buscarPorId(int id) {
+        return (Pelicula) dao.buscarPorId(Pelicula.class, id);
+    }
+
     public List<Pelicula> getLista() {
-        return daoPeliculas.getLista(Pelicula.class, null);
+        return dao.getLista(Pelicula.class);
     }
 }
